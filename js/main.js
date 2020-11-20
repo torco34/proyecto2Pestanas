@@ -1,18 +1,25 @@
-const lista =  document.getElementById('lista')
+const lista =  document.getElementById('lista');
+
 
 // cuerpo
-const viajes = document.getElementById('viajes')
+const viajes = document.getElementById('viaje')
 const pasajes = document.getElementById('pasaje')
 const hoteles = document.getElementById('hoteles')
 const internacional = document.getElementById('internacional')
+//cuerpo de la paguina
+
+const cuerpo_viajes = document.getElementById('cuerpo_viajes')
+const cuerpo_pasajes = document.getElementById('cuerpo_pasajes')
+const cuerpo_hoteles = document.getElementById('cuerpo_hoteles')
+const cuerpo_internacional = document.getElementById('cuerpo_internacional')
  
  function moestraPestana(e){
  	   e.preventDefault()
 
-   viajes.style.display = 'none'
-   pasajes.style.display = 'none'
-   hoteles.style.display = 'none'
-    internacional.style.display = 'none'
+  cuerpo_viajes.style.display = 'none'
+  cuerpo_pasajes.style.display = 'none'
+   cuerpo_hoteles.style.display = 'none'
+cuerpo_internacional.style.display = 'none'
    // cobeseras en negro
 
    viajes.classList.remove('active')
