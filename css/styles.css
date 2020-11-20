@@ -1,0 +1,90 @@
+*{
+	margin:0;
+	padding: 0;
+
+}
+
+
+root{
+	--yellow:#fdde3e ;
+	---blue: #1dbbfa;
+	---pink: #fe89fe;
+	---blue-x:#b6e4ee;
+}
+
+body{
+	overflow-x: hidden;
+}
+.container{
+width: 90%;
+max-width: 1200px;
+overflow: hidden;
+margin: auto;
+
+
+}
+
+
+
+.container_header{
+	 grid-template-columns: repeat(auto-fill, 100%);
+	 display: grid;
+	position: relative;
+	background: #fdde3e;
+    height: 5rem;
+	width: 100%;
+}
+.lista{
+	display: flex;
+	 grid-template-columns: repeat(auto-fill, 100%);
+	justify-content: center;
+
+}
+
+.lista li {
+	list-style: none;
+	margin-top: 27px;
+
+	
+}
+
+.lista li a{
+	margin: 4vw;
+	color: #000;
+	font-size: calc(0.6em + 0.5rem);
+	text-decoration: none;
+}
+
+
+ li.active a{
+	color:#fe89fe;
+}
+
+
+.lista li a:hover{
+	color:#fe89fe;
+}
+
+/*CUERPO DEL LA PAGINA*/
+.viajes{
+	background: pink;
+	display: none;
+}
+
+.pasaje{
+	background:#fdde3a;
+	color:;
+	display: none;
+
+}
+
+.hoteles{
+	background: #cccc;
+	display: none;
+}
+
+.internacional{
+	background: #b6e4ee;
+	/*display: none;*/
+
+}
