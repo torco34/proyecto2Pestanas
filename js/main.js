@@ -29,16 +29,32 @@ cuerpo_internacional.style.display = 'none'
 
    const link = event.target
    console.log(link)
+      link.hash
+console.log(link.hash)
    const cuerpoId = link.dataset.cuerpo
-     console.log(cuerpoId)
 
-  const cuerpo = document.querySelector(cuerpoId)
+
+const cuerpo = document.querySelector(cuerpoId)
+
+
+
 console.log(cuerpo)
+
 cuerpo.style.display = "block"
+  
+
+
 
 const papa = link.parentNode
 console.log(papa)
 papa.classList.add('active')
 
  }
+function refrecar(e){
+e.preventDefault()
+const link = event.target
+  link.hash
+console.log(  link.hash)
+}
 lista.addEventListener('click', moestraPestana)
+lista.addEventListener('click',  refrecar)
